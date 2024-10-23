@@ -11,11 +11,13 @@
 </header>
 
 <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#agregarCurso">Agregar curso</a>
-    <a href="#contacto">Contacto</a>
+    <a [routerLink]="['/pages/inicio']" >Inicio</a>
+    <a [routerLink]="['/pages/cursos']" >Cursos</a>
+    <a [routerLink]="['/pages/agregar-curso']">Agregar curso</a>
+    <a [routerLink]="['/pages/contacto']">Contacto</a>
 </nav>
+
+<router-outlet></router-outlet>
 
 </body>
 </html>
